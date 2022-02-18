@@ -66,11 +66,11 @@ CHI and DBI across different K for k-means to cluster the CFP sequences. When K=
 
 ## tSNE visulization
 Projection scatter plot of individual eyes based on features extracted by (a) CNN+LSTM, (b) CAT-LSTM (with CFP inputs up to iAMD stage) and (c) CAT-LSTM (with CFP inputs including late AMD stages).  To fairly compare with CNN+LSTM, we use CAT-LSTM-v2 (which embeds progression features based on predicted AMD stage rather than ground truth) to extrace CFP sequence features.
-<img src="src/tsne.PNG" width=50%>
+<img src="src/tsne.PNG" width=80%>
 
 ## subphenotype analysis (genotype information)
 The distribution of AMD-associated genetic markers' alternative allele across the three subphenotypes. The subphenotypes are 1: subphenotype I; 2: subphenotype II; 3: subphenotype III.  Because the alternative allele rates of different genetic markers vary a lot, we normalize the rates when visualizing the distribution.
 
-<img src="src/genotype.png" width=50%>
+<img src="src/genotype.png" width=30%>
 
 
