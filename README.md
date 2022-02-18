@@ -16,7 +16,7 @@ CAT-LSTM adopts contrastive attention module (CA) to capture abnormality from CF
 
 Given the learned CFP sequence representation vector, k-means is adopted to subtype patients' eyes into subphenotypes.
 
-<img src="src/clustering.PNG" width=50%>
+<img src="src/decoder.PNG" width=50%>
 
 # Files Directory
     CAT-LSTM
