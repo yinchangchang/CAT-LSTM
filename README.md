@@ -12,11 +12,11 @@ This repository contains the official PyTorch implementation of the following pa
 # Framework
 CAT-LSTM adopts contrastive attention module (CA) to capture abnormality from CFPs, and time-aware LSTM (T-LSTM) to model the CFP sequences and predict late AMD risks in coming years.
 
-<img src="src/framework.pdf" width=80%>
+<img src="src/framework.PNG" width=80%>
 
 Given the learned CFP sequence representation vector, k-means is adopted to subtype patients' eyes into subphenotypes.
 
-<img src="src/clustering.pdf" width=50%>
+<img src="src/clustering.PNG" width=50%>
 
 # Files Directory
     CAT-LSTM
@@ -54,14 +54,19 @@ python main.py --use-cl 1	# Predict late AMD with contrastive attention module
 Settings of n-year late AMD prediction. We predict whether patients' eyes will progress to late AMD within n years. 
 <img src="src/setting.png" width=50%>
 
+# Late AMD detection and prediction results
+AUROC of late AMD stage prediction. Late AMD detection denotes detecting whether the patients' AMD diseases have progressed to late stages based on information up to current visit. Late AMD prediction (1-5 years and All-year) denote predicting whether patients' AMD diseases will progress to late AMD within 1-5 years and progress to late AMD ultimately.
+<img src="src/result.PNG" width=90%>
+
+
 ## K value selection for k-means
 CHI and DBI across different K for k-means to cluster the CFP sequences. When K=3,  we have the best DBI value for CFP clustering. It is also the elbow point for CHI.
 
-<img src="src/k-selection.png" width=50%>
+<img src="src/k-selection.PNG" width=50%>
 
 ## tSNE visulization
 Projection scatter plot of individual eyes based on features extracted by (a) CNN+LSTM, (b) CAT-LSTM (with CFP inputs up to iAMD stage) and (c) CAT-LSTM (with CFP inputs including late AMD stages).  To fairly compare with CNN+LSTM, we use CAT-LSTM-v2 (which embeds progression features based on predicted AMD stage rather than ground truth) to extrace CFP sequence features.
-<img src="src/tsne.png" width=50%>
+<img src="src/tsne.PNG" width=50%>
 
 ## subphenotype analysis (genotype information)
 The distribution of AMD-associated genetic markers' alternative allele across the three subphenotypes. The subphenotypes are 1: subphenotype I; 2: subphenotype II; 3: subphenotype III.  Because the alternative allele rates of different genetic markers vary a lot, we normalize the rates when visualizing the distribution.
