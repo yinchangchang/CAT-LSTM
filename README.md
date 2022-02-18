@@ -26,9 +26,9 @@ Given the learned CFP sequence representation vector, k-means is adopted to subt
     |--file                                 * The preprocessing codes will write some files here.
     |
     |--data                                 * Put the downloaded datasets here.
-    |    |--phs000001.v3.p1.c1				* Downloaded from 
+    |    |--phs000001.v3.p1.c2              * Downloaded from https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?page=request_details_pi&arid=454017&filter=arid
     |    |    
-    |    |--phs000001.v1.p1.c1              * Downloaded from 
+    |    |--phs000001.v1.p1.c1              * Downloaded from https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?page=request_details_pi&arid=454018&filter=arid
     |
     |--result
 
